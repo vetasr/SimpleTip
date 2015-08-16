@@ -1,0 +1,45 @@
+<html>
+   <head>
+      <script type="text/javascript" src="../js/jquery.js"></script>
+      <script type="text/javascript" src="../js/jquery.simpletip-1.0.js"></script>
+      <script type="text/javascript">
+      
+         $(document).ready(function(){
+         
+            // Example 1
+            $('.example1 a').SimpleTip({'class':'myclass'});
+            
+            // Example 2
+            $('.example2 a').SimpleTip({'class':'myclass'});
+            
+            // Example 3
+            $('.example3 a').SimpleTip({
+               'my'         : 'center bottom',  // position tooltip relatively 'at'
+               'at'         : 'center top',     // start point in 'at' element
+               'class'      : 'myclass1',       // advanced css class for decoration tooltip    
+               'timefade'   : 500,              // time to fade in tooltip
+               'timedelay'  : 500,              // delay before show tooltip
+               'offsetx'    : 0,                // advanced offset x
+               'offsety'    : 0                 // advanced offset y
+            });
+         })
+      
+      </script>
+      <style>
+         .myclass {border: 1px solid gray; background: #EEEEEE; padding: 5px; }
+         .myclass1 {border: 1px solid gray; background: yellow; padding: 5px; border-radius:5px; font: 11px Arial; z-index:100}
+      </style>
+      
+   </head>
+   <body>
+      <h2>Example 1: Simple tooltip</h2>
+      <p class="example1">This a simple text. Click <a href="#" title="This a simple tooltip">here</a></p>
+      
+      <h2>Example 2: Image tooltip</h2>
+      <p class="example2">This a simple text. Click <a href="#" title="<img src='image_ex.png'>">here</a></p>
+      
+      <h2>Example 3: Extra settings tooltip</h2>
+      <p class="example3">This a simple text. Click <a href="#" title="This a extra settings tooltip">here</a></p>
+      
+   </body>
+</html>

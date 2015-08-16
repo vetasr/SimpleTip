@@ -1,0 +1,8 @@
+Currently some vantages in using SimpleTip are:
+
+* Easy and simpler to use
+* Customizable via CSS
+* Cross browser compatible
+* Syntax of markup (uses the title attribute)
+* Intellegent position (repositions itself when there's not enough screen space)
+* Totally free
